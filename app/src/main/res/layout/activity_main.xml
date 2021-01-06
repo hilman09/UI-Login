@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coding"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackGroundLayer"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-144dp" />
+
+    <ImageView
+        android:id="@+id/imgHeader"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/arkademy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/email"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@id/emailDivider"
+        app:layout_constraintStart_toEndOf="@+id/imgEmail"
+        app:layout_constraintTop_toBottomOf="@+id/imgHeader"/>
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:minHeight="3dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/hilmansept_gmail_com"
+        android:textColorHint="@color/textColorHint"
+        android:gravity="top"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/emailDivider"
+        app:layout_constraintStart_toEndOf="@id/imgEmail"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="Autofill" />
+    <View
+        android:id="@+id/emailDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/textColorHint"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail"/>
+
+
+    <ImageView
+        android:id="@+id/imgEmail"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_email_24"
+        app:layout_constraintTop_toTopOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/emailDivider"
+        app:layout_constraintBottom_toTopOf="@+id/emailDivider"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/password"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@id/emailDivider"
+        app:layout_constraintStart_toEndOf="@+id/imgEmail"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail"/>
+
+    <EditText
+        android:id="@+id/inputPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginStart="8dp"
+        android:gravity="top"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="3dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/textColorHint"
+        app:layout_constraintEnd_toEndOf="@id/emailDivider"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/imgEmail"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:ignore="Autofill" />
+
+    <View
+        android:id="@+id/passDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/textColorHint"
+        app:layout_constraintTop_toBottomOf="@+id/inputPass"/>
+    <ImageView
+        android:id="@+id/imgPass"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_vpn_key_24"
+        app:layout_constraintTop_toTopOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/passDivider"
+        app:layout_constraintBottom_toTopOf="@+id/passDivider"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/imgLook"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_baseline_remove_red_eye_24"
+        app:layout_constraintBottom_toTopOf="@+id/passDivider"
+        app:layout_constraintEnd_toEndOf="@+id/inputPass"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="@+id/passDivider"
+        app:layout_constraintTop_toTopOf="@+id/password" />
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_background"
+        android:text="@string/sign_in"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/passDivider"/>
+
+    <TextView
+        android:id="@+id/forgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signIn"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/textColorHint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPass" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account_sign_up"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

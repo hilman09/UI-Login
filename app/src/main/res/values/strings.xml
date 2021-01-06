@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tugas3-Level10</string>
+    <string name="yout_app">Yout APP</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="hilmansept_gmail_com">hilmansept@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account_sign_up">Dont have an account? Sign up</string>
+</resources>
